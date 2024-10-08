@@ -5,14 +5,14 @@ Api de gerenciamento de um banco de dados de cordelistas e cantadores
 ```mermaid
 classDiagram
     class Autor {
-        +String nome
-        +String bio
+        -String nome
+        -String bio
     }
 
     class Cordel {
-        +String titulo
-        +int numeroPaginas
+        -String titulo
+        -int numeroPaginas
     }
 
-    Autor --|> Cordel
+    Autor "1" *-- "n" Cordel
 
