@@ -9,7 +9,7 @@ public class Autor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(length = 100, unique = true, nullable = false)
+    @Column(length = 100, unique = true)
     private String nome;
 
     @Column(length = 1500)
